@@ -2,7 +2,7 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Project Overview
+## Repo Overview
 
 A static asset repository for the IOweTea project. It holds brand assets (logo in multiple sizes and themes) and web documents (such as the privacy policy) that need to be publicly accessible. The repository is deployed via **GitHub Pages**, making all files available at:
 
@@ -43,6 +43,7 @@ https://xiki808.github.io/iowetea-assets/web-documents/privacy-policy.html
 ```
 
 **Consumers:**
+
 - **app** (`app/lib/helpers/configs.dart`) — defines `privacyPolicyURL` constant; the WebView intercepts navigation to this URL and opens it in the system browser
 - **web** (`src/components/common/ThreeDotMenuComponent.vue`) — links to it from the three-dot menu
 
@@ -55,7 +56,7 @@ Logo images are provided in two themes (`dark` / `light`) to suit different UI c
 - **manifest.json**: PWA manifest referencing the 192×192 and 512×512 PNGs
 - **staging/**: A staging-specific 1024×1024 variant (used to distinguish staging builds visually)
 
-## Related Projects
+## Related Repos
 
 - **app** - Repository Path: `@../app`
   Loads the privacy policy URL via system browser when the user taps the link inside the WebView.
