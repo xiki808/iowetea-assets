@@ -45,6 +45,16 @@ https://xiki808.github.io/iowetea-assets/web-documents/privacy-policy.html
 - **app** (`app/lib/helpers/configs.dart`) — defines `privacyPolicyURL` constant; the WebView intercepts navigation to this URL and opens it in the system browser
 - **web** (`src/components/common/ThreeDotMenuComponent.vue`) — links to it from the three-dot menu
 
+### account-deletion.html
+
+Public account-deletion page, used as the Google Play account-deletion URL. It explains how to delete an account in the app (Dashboard > Users > My Account > Delete Account), what is deleted, and how to request deletion without the app. Same plain markup as the privacy policy, which it links to.
+
+```
+https://xiki808.github.io/iowetea-assets/web-documents/account-deletion.html
+```
+
+It is not linked from the web app.
+
 ## Brand Assets
 
 Logo images are provided in two themes (`dark` / `light`) to suit different UI contexts. Each theme includes:
