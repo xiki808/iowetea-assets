@@ -55,6 +55,16 @@ https://xiki808.github.io/iowetea-assets/web-documents/account-deletion.html
 
 It is not linked from the web app.
 
+### support.html
+
+Public app support contact page for the App Store Support URL and Google Play
+website/contact field. It gives the existing `info.iowetea@gmail.com` address,
+getting-started instructions, and links to the privacy and deletion pages.
+
+```
+https://xiki808.github.io/iowetea-assets/web-documents/support.html
+```
+
 ## Brand Assets
 
 Logo images are provided in two themes (`dark` / `light`) to suit different UI contexts. Each theme includes:
@@ -63,6 +73,16 @@ Logo images are provided in two themes (`dark` / `light`) to suit different UI c
 - **favicon.ico**: Multi-resolution icon for browser tabs
 - **manifest.json**: PWA manifest referencing the 192×192 and 512×512 PNGs
 - **staging/**: A staging-specific 1024×1024 variant (used to distinguish staging builds visually)
+
+## Store Artwork
+
+`store/` contains the Google Play icon, feature graphic, and phone screenshots,
+plus App Store iPhone and iPad screenshots and an opaque icon reference. The
+screenshots come from the sibling web repo's disposable demo bundle. See
+`store/README.md` for exact sizes, regeneration, the final native review step,
+and platform-specific console worksheets. The existing privacy-policy page is
+still a 2022 template and needs a product-specific rewrite before store
+submission.
 
 ## Related Repos
 

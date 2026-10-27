@@ -13,6 +13,11 @@ brand/
   light/                Light-theme app and web icons
 web-documents/
   privacy-policy.html   Public privacy policy
+  account-deletion.html Public account deletion instructions
+  support.html          Public support contact and help
+store/
+  google-play/          Listing icon, feature graphic, phone screenshots
+  app-store/            iPhone and iPad screenshots, icon reference
 ```
 
 Each theme directory contains the same icon set:
@@ -34,6 +39,9 @@ Files retain their repository-relative paths when published. For example:
 The privacy-policy page is used by the IOweTea app and web interface. The app
 opens this page in the system browser, while the web interface links to it from
 its menu.
+
+See [store/README.md](store/README.md) for the store artwork inventory,
+generation command, final native screenshot check, and console worksheets.
 
 ## Working safely
 
