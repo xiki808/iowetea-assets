@@ -76,13 +76,14 @@ Logo images are provided in two themes (`dark` / `light`) to suit different UI c
 
 ## Store Artwork
 
-`store/` contains the Google Play icon, feature graphic, and phone screenshots,
-plus App Store iPhone and iPad screenshots and an opaque icon reference. The
+`store/` contains the Google Play icon, feature graphic, phone, tablet and
+Chromebook screenshots, plus App Store iPhone, iPhone Duo and iPad screenshots,
+optional header and search-result artwork, and an opaque icon reference. The
 screenshots come from the sibling web repo's disposable demo bundle. See
 `store/README.md` for exact sizes, regeneration, the final native review step,
-and platform-specific console worksheets. The existing privacy-policy page is
-still a 2022 template and needs a product-specific rewrite before store
-submission.
+and platform-specific console worksheets. The privacy-policy page was rewritten
+for the current app, home server and linked services on 2026-10-27; check its
+claims against the final builds and store privacy answers before submission.
 
 ## Related Repos
 

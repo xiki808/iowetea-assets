@@ -1,5 +1,18 @@
 # Changelog
 
+## Unreleased - 2026-10-27
+
+- Replace the 2022 privacy-policy template with a policy for the Android and
+  iOS app, home server, VPN, notifications, map and account deletion.
+- Clarify that an older backup can retain an account copy after account
+  deletion, and update both store worksheets.
+- Add 7-inch tablet, 10-inch tablet and Chromebook screenshot sets for Google
+  Play, with reproducible large-screen captures.
+- Add App Store product page header and search-result artwork, with a
+  reproducible generator and App Store Connect upload notes.
+- Add one iPhone Duo screenshot set at the accepted inner-display size for its
+  single App Store Connect upload area.
+
 ## 1.1.0 - 2026-10-25
 
 - Add Google Play listing artwork and App Store iPhone/iPad screenshot sets from

@@ -2,8 +2,8 @@
 
 Prepared 2026-10-25 for a **new** iOS app, bundle ID
 `app.iowetea.iowetea`. This is a copy-and-check worksheet, not a record of
-values already entered in App Store Connect. The app source still uses the old
-bundle ID until it is migrated.
+values already entered in App Store Connect. The production Flutter flavor
+uses this bundle ID.
 
 ## New app record and product page
 
@@ -44,6 +44,33 @@ The 1024px store icon is embedded in the signed app; `store/app-store/icon-1024.
 is a reference copy. Check the browser-rendered demo screenshots against the
 signed iOS app before upload.
 
+For **iPhone Duo**, App Store Connect has **one screenshot drop area** that
+accepts either outer or inner display sizes. Upload the four screenshots in
+`store/app-store/iphone-duo/` (`1-home.png` through `4-security.png`,
+2007 × 2853 portrait). This is one cohesive inner-display set for that area.
+
+These are demo WebView renders at Apple's accepted output sizes. Compare the
+chosen images with the signed app on iPhone Duo, including native safe areas and
+the open layout, before uploading. Apple adds an iPhone Duo optimization
+badge when Duo screenshots are submitted. Its current guidance makes Duo
+screenshots mandatory for submissions using the iOS 27.1 SDK or later starting
+in April 2027.
+
+## Header and Search Results
+
+These optional creative assets are separate from the required screenshots. In
+**Product Page Information → Header and Search Results**, upload:
+
+| Placement | File | Size |
+| --- | --- | --- |
+| Product page header | `store/app-store/creative/header.png` | 3840 × 1646, 21:9 |
+| Search results | `store/app-store/creative/search-results.png` | 3840 × 2560, 3:2 |
+
+Both are opaque PNGs built from IOweTea brand artwork and the disposable demo
+UI. Use **Preview** in App Store Connect to inspect iPhone and iPad layouts,
+orientations and languages before submission. These placements appear on
+iOS/iPadOS 27 and later; older versions use the regular screenshots.
+
 ## App Review information
 
 Enter a real contact's **first name, last name, email and international-format
@@ -51,19 +78,29 @@ phone number**. The public support email is `info.iowetea@gmail.com`; confirm
 who will monitor it during review. No personal phone number belongs in this
 repository.
 
-Suggested Notes for Review, after checking the submitted build:
+For the built-in demo review route, leave **Sign-in required** unchecked: the
+reviewer can reach this route without a username or password. Put the steps in
+**Notes for Review**, after checking them against the submitted build:
 
 ```text
-IOweTea is a companion for a user-owned home server. To review without hardware, launch the app and tap “Try the demo” on the Setup IOweTea screen. No account or QR code is required. Use the navigation to visit Home, Camera, Remote, Security and Dashboard. The demo Security PIN is 1234; it is also displayed on the Dashboard Demo board. Demo data resets when the reviewer leaves the demo.
+On first launch, the Setup IOweTea screen appears. Tap “Try the demo” to open a sample home. No server, account, password or QR code is needed. Use the bottom navigation to view Home, Camera, Remote, Security and Dashboard. The demo Security PIN is 1234, shown on the Dashboard's Demo board. Demo changes reset when you leave the demo.
 
-The production setup, physical device integrations and VPN connection require an IOweTea home server. The VPN provides encrypted remote access to that user's own server; it is not a public VPN endpoint. The demo cannot exercise that connection. Contact info.iowetea@gmail.com for a hardware walkthrough or additional access if required.
+Production setup, physical device integrations and VPN access require an IOweTea home server and cannot be exercised in the demo. The VPN connects only to the user's own server. Contact info.iowetea@gmail.com if you need a hardware walkthrough or additional access.
 ```
 
-Apple may require a working review account, hardware access or a video that
-shows physical pairing and interaction. Supply those with the submission if
-the built-in demo does not expose enough of the advertised features. Do not
-mark “Sign-in required” for the demo path; if a separate review server/account
-is provided, enter its credentials in the designated fields.
+Apple guideline 2.1 says a built-in demo may replace a review account **with
+prior approval** when an account cannot be supplied for legal or security
+reasons, and that the demo must show the app's full features. This demo uses
+sample data and does not exercise pairing, physical integrations or VPN. A
+note alone does not guarantee Apple will accept it as full review access. Seek
+App Review's approval for this route before submission; if Apple requires
+more, provide a dedicated, Internet-reachable review home and a working test
+account. Then select **Sign-in required**, enter its username and password,
+and put the server address, setup QR code and pairing steps in Notes. Keep the
+review home and credentials working throughout review. Do not enter placeholder
+credentials or give reviewers a private LAN address or personal home account.
+For required hardware, Apple also asks for a video showing the app on a
+physical Apple device pairing and interacting with the hardware.
 
 ## App information and compliance
 
@@ -89,14 +126,19 @@ is provided, enter its credentials in the designated fields.
 
 ## Before entering the URLs
 
-`web-documents/privacy-policy.html` is still a 2022 template. Rewrite and
-review it for current data handling before using the URL for submission.
+`web-documents/privacy-policy.html` was rewritten on 2026-10-27 for the
+current app, home server and linked services. Check it against the final signed
+build and the App Privacy answers before submission.
 `support.html` is new in this change and must be published before its URL is
 entered. Verify the links in a private browser window after publishing.
 
 ## Official references
 
 - [App information and name limits](https://developer.apple.com/help/app-store-connect/reference/app-information/app-information)
+- [iPhone Duo submission guidance](https://developer.apple.com/news/?id=kkphp5qo)
+- [Screenshot specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications)
+- [Manage creative assets](https://developer.apple.com/help/app-store-connect/manage-app-information/manage-your-app-store-assets)
+- [Creative asset specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/creative-assets-specifications)
 - [Description, keywords, URLs and review information](https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information)
 - [Privacy answers](https://developer.apple.com/app-store/app-privacy-details/)
 - [App Review guidelines, including VPN apps](https://developer.apple.com/app-store/review/guidelines/)

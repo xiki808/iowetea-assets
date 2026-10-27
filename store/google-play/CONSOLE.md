@@ -2,7 +2,7 @@
 
 Prepared 2026-10-25 for a **new** Android app, package `app.iowetea.iowetea`.
 This is a copy-and-check worksheet, not a record of values already entered in
-Play Console. The app source still uses the old package until it is migrated.
+Play Console. The production Flutter flavor uses this package ID.
 
 ## Main store listing
 
@@ -12,7 +12,8 @@ Play Console. The app source still uses the old package until it is migrated.
 | Short description (80 characters max) | `Control your IOweTea home server, cameras, remotes and security.` |
 | Primary language | English (United Kingdom), if this is the language selected for the new listing |
 | App type | App |
-| Category | House & Home, if offered in the current console; otherwise choose the closest home-control category |
+| Category | House & Home |
+| Tags | Home automation; Remote control |
 | Contact email | `info.iowetea@gmail.com` |
 | Website / support URL | `https://xiki808.github.io/iowetea-assets/web-documents/support.html` |
 | Privacy policy URL | `https://xiki808.github.io/iowetea-assets/web-documents/privacy-policy.html` |
@@ -38,11 +39,30 @@ Upload these files from this repo:
 - Feature graphic: `store/google-play/feature-graphic.png`
 - Phone screenshots, in order: `store/google-play/phone/1-home.png`,
   `2-camera.png`, `3-remote.png`, `4-security.png`
+- 7-inch tablet screenshots, in the same order:
+  `store/google-play/tablet-7/1-home.png` through `4-security.png`
+- 10-inch tablet screenshots, in the same order:
+  `store/google-play/tablet-10/1-home.png` through `4-security.png`
+- Chromebook screenshots, in the same order:
+  `store/google-play/chromebook/1-home.png` through `4-security.png`
 
-The screenshot images are demo WebView renders. Check them against a signed
-Android build and replace any image whose native status bar or safe area differs.
+The screenshot images are demo WebView renders. The tablet and Chromebook sets
+show the landscape responsive layout. Check every set against a signed Android
+build on the matching device class and replace any image whose native status
+bar, safe area or layout differs.
+
+Set the category and tags under **Grow users → Store presence → Store settings →
+App category**. Choose these two tags from **Manage tags**. They describe the
+app's home controls and configured remotes. Google allows up to five tags; check
+the exact labels shown in the console before saving.
 
 ## App content and review access
+
+For **Is any part of your app restricted?**, select **Yes / All or some
+functionality is restricted**. The built-in demo needs no credentials, but
+production home controls require a home server and sign-in. Name the access
+instructions **Try a Demo**; leave username and password empty for this route
+and put the steps in the instructions field.
 
 In **App content → Sign-in details**, explain that the sample home is available
 without credentials. Use these instructions, then verify them on the uploaded
@@ -84,14 +104,16 @@ Complete the current App content questionnaires using the final signed build:
 
 ## Before entering the URLs
 
-`web-documents/privacy-policy.html` is still a 2022 template. Rewrite and
-review it for current data handling before using the URL for submission.
+`web-documents/privacy-policy.html` was rewritten on 2026-10-27 for the
+current app, home server and linked services. Check it against the final signed
+build and the answers in both stores' privacy questionnaires before submission.
 `support.html` is new in this change and must be published before its URL is
 entered. Verify all three links in a private browser window after publishing.
 
 ## Official references
 
 - [Create app and listing fields](https://support.google.com/googleplay/android-developer/answer/9859152)
+- [Choose a category and tags](https://support.google.com/googleplay/android-developer/answer/9859673)
 - [Listing graphics](https://support.google.com/googleplay/android-developer/answer/9866151)
 - [Sign-in details for review](https://support.google.com/googleplay/android-developer/answer/9859455)
 - [Data safety definitions](https://support.google.com/googleplay/android-developer/answer/10787469)
