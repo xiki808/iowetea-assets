@@ -17,6 +17,8 @@
   - Add one iPhone Duo screenshot set at the accepted inner-display size for its
     single App Store Connect upload area.
 
+- Presentation-only, no version change (shipped with tsk-474 by owner approval): `web-documents/account-deletion.html` is now a full HTML document (doctype, `lang="en"`, charset and viewport meta, title, a small readable stylesheet, `<main>` wrapper) and its section headings are `<h2>` under the single `<h1>`. The deletion steps, what is deleted, backup retention and contact wording are unchanged. Already on `main` (c1f3a993) and published by GitHub Pages. To roll back, revert c1f3a993.
+
 ## 1.1.0 - 2026-10-25
 
 - Add Google Play listing artwork and App Store iPhone/iPad screenshot sets from
