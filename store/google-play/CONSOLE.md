@@ -26,7 +26,7 @@ IOweTea is the companion app for an IOweTea home server. It brings the controls 
 
 Set up a connection to your home server, then control compatible devices, check cameras, use configured remotes and manage your home security from the app. The dashboard also provides access to account and system settings. Available features depend on the devices and services configured in your home.
 
-When you are away from your home Wi-Fi, IOweTea can use an encrypted WireGuard VPN connection to reach your own home server. You choose whether the app uses on-demand or always-on VPN behavior.
+When you are away from your home Wi-Fi, IOweTea can use an encrypted VPN connection to reach your own home server. You choose whether the app uses on-demand or always-on VPN behavior.
 
 No IOweTea server yet? Open Try the demo from the setup screen to explore a sample home with devices, cameras, remotes and security controls. The demo uses sample data and resets when you leave it.
 

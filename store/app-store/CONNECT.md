@@ -30,7 +30,7 @@ IOweTea brings your home controls together on your iPhone or iPad. Connect the a
 
 The dashboard includes account and system settings. Available features depend on the devices and services configured in your home.
 
-When away from home Wi-Fi, IOweTea can connect securely to your own home server using an encrypted WireGuard VPN. You can choose on-demand or always-on VPN behavior.
+When away from home Wi-Fi, IOweTea can connect securely to your own home server using an encrypted VPN. You can choose on-demand or always-on VPN behavior.
 
 You can explore a sample home before connecting a server. Select Try the demo on the setup screen to see sample devices, cameras, remotes and security controls. Demo changes reset when you leave it.
 
