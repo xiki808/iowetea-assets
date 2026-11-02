@@ -27,7 +27,10 @@ brand/
     └── staging/
         └── iowetea_1024x1024.png
 web-documents/
-└── privacy-policy.html         # Required by Google Play and Apple App Store for app approval
+├── privacy-policy.html         # Required by Google Play and Apple App Store for app approval
+├── account-deletion.html       # Google Play account-deletion URL
+└── support.html                # Store support URL
+store/                          # Store artwork and listing worksheets (see Store Artwork)
 ```
 
 ## Web Documents
@@ -64,6 +67,20 @@ getting-started instructions, and links to the privacy and deletion pages.
 ```
 https://xiki808.github.io/iowetea-assets/web-documents/support.html
 ```
+
+### Customer-facing naming
+
+Public documents and store listing copy describe IOweTea features ("device
+control", "VPN", "DNS filtering service") rather than the services installed on
+the home server (Home Assistant, AdGuard, Frigate, WireGuard, WGDashboard), per
+the workspace rule `context/iowetea-customer-facing-naming.md` (tsk-473).
+Outside processors whose identity matters to the privacy disclosure (Firebase
+Cloud Messaging/Google, Apple Push Notification service, Cloudflare, Quad9,
+OpenStreetMap) keep their names. Owner-only notes in the store worksheets
+(VpnService declaration, export compliance) may name WireGuard, because those
+answers must describe the actual implementation. Any wording change in a
+privacy or deletion document goes to the owner for review, even when no claim
+changes.
 
 ## Brand Assets
 
