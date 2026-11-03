@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1 - 2026-11-03
+
+- Correct backup retention on public pages (tsk-493): the privacy policy no longer says a new backup replaces the archive kept on the home server. It now says every backup the home owner creates stays on the home server until the owner deletes it or resets the home server, a new backup does not replace earlier ones, and downloaded or copied backups are controlled by whoever holds them. Its "Last updated" date moves to 3 November 2026. The account-deletion page now says an older account copy can remain in a backup "until the home owner deletes that backup or resets the home server" instead of "until that backup is replaced or deleted". No other claim, figure or processor changed. Published by GitHub Pages after merge.
+
 ## 1.2.0 - 2026-11-02
 
 - Name IOweTea features instead of the services under them on public pages (tsk-473): the privacy policy no longer names Home Assistant, AdGuard or WireGuard ("device control and VPN access", "IOweTea can use a VPN", "the home server's DNS filtering service", "an encrypted VPN tunnel", "your device-control login and credentials"), and the account-deletion page lists "Your home device-control login and its tokens". No claim about collection, sharing, retention, deletion, figures, outside processors or the "Last updated" date changed; the wording is flagged for owner review. Published by GitHub Pages after merge.
